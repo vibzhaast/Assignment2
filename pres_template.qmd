@@ -1,0 +1,122 @@
+---
+title: My Presentation
+author: Group X; author 1, author 2 and author 3
+institute: HVL
+papersize: a4
+#lang: en-GB
+#lang: en-US
+# see https://r12a.github.io/app-subtags/ for  lang tags BCP47 
+# English with oxford english dictionary spelling
+# Don't know if oxendict makes any difference
+lang: en-oxendict
+format:
+  revealjs:
+    # note; this is html with javascript and has has last name html
+        theme: simple
+        footer: 'Assignment 2; Seminar Autumn 2026'
+        slide-number: c/t
+        smaller: true
+        reveal_options:
+          #incremental: true
+
+          #scrollable: true
+  typst: default
+  html: 
+  # this is the html document version (not slides)
+  # might cause problems on windows
+    output-ext: "htm"
+# Change text from Author to Group in those formats where this appears
+language:
+  title-block-author-single: "Group"
+editor: source
+editor_options:
+  markdown:
+    wrap: 72
+    canonical: true
+    chunk_output_type: console
+abstract: |
+  A short abstract describing the content of the presentation. This will only appear in the `typst` and `html document` version.
+echo: true
+eval: true
+# Feel free to add more stash
+---
+
+## First slide
+
+Incremental point list
+
+::: incremental
+- one
+  1.  en
+  2.  to
+  3.  tre
+- neste
+:::
+
+## Second slide
+
+Some text first. Then whole list
+
+::: fragment
+- 1
+  1.  en
+  2.  to
+  3.  tre
+- 2
+:::
+
+## Two columns slide; first incremental
+
+:::::: columns
+:::: {.column .fragment width="50%"}
+Some text
+
+::: incremental
+- one
+  1.  en
+  2.  to
+  3.  tre
+- neste
+:::
+::::
+
+::: {.column .fragment width="50%"}
+- 1
+  1.  en
+  2.  to
+  3.  tre
+- 2
+:::
+::::::
+
+## Two columns slide; both incremental
+
+::::::: columns
+:::: {.column .incremental width="50%"}
+::: fragment
+First some text
+:::
+
+- one
+  1.  en
+  2.  to
+  3.  tre
+- neste
+::::
+
+:::: {.column .incremental width="50%"}
+- 1
+  1.  en
+  2.  to
+  3.  tre
+- 2
+
+::: fragment
+Som text after point list.
+:::
+::::
+:::::::
+
+## Conclusions
+
+## References
