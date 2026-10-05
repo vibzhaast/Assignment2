@@ -1,6 +1,6 @@
 ---
-title: My Presentation
-author: Group X; author 1, author 2 and author 3
+title: Thrustworthy Data Visualization
+author: Group 1; Daraf, Katrine and Vibecke
 institute: HVL
 papersize: a4
 #lang: en-GB
@@ -41,7 +41,7 @@ eval: true
 # Feel free to add more stash
 ---
 
-## First slide
+## Definition
 
 Incremental point list
 
@@ -53,7 +53,7 @@ Incremental point list
 - neste
 :::
 
-## Second slide
+## Problem
 
 Some text first. Then whole list
 
@@ -65,57 +65,17 @@ Some text first. Then whole list
 - 2
 :::
 
-## Two columns slide; first incremental
+## In practice
 
-:::::: columns
-:::: {.column .fragment width="50%"}
-Some text
+Some text first. Then whole list
 
-::: incremental
-- one
-  1.  en
-  2.  to
-  3.  tre
-- neste
-:::
-::::
-
-::: {.column .fragment width="50%"}
+::: fragment
 - 1
   1.  en
   2.  to
   3.  tre
 - 2
 :::
-::::::
-
-## Two columns slide; both incremental
-
-::::::: columns
-:::: {.column .incremental width="50%"}
-::: fragment
-First some text
-:::
-
-- one
-  1.  en
-  2.  to
-  3.  tre
-- neste
-::::
-
-:::: {.column .incremental width="50%"}
-- 1
-  1.  en
-  2.  to
-  3.  tre
-- 2
-
-::: fragment
-Som text after point list.
-:::
-::::
-:::::::
 
 ## Conclusions
 
